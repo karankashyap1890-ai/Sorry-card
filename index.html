@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff5f8">
+  <meta name="description" content="A little heartfelt sorry card for Anjali.">
+  <title>A little sorry, Anjali 💗</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <main class="page-shell">
+    <header class="topline"><span class="tiny-heart" aria-hidden="true">♥</span> A little note, just for you <span class="tiny-heart" aria-hidden="true">♥</span></header>
+
+    <section class="card question-card" id="questionScreen" aria-labelledby="questionTitle">
+      <div class="card-sparkle sparkle-one" aria-hidden="true">✦</div>
+      <div class="card-sparkle sparkle-two" aria-hidden="true">✧</div>
+      <div class="eyebrow"><span></span> ONE TINY QUESTION <span></span></div>
+      <h1 class="question-title" id="questionTitle">Are you still<br><em>naraz with me?</em></h1>
+      <p class="intro question-intro">I hope this little teddy can make you smile.<br class="desktop-break"> Be honest — but go easy on him! 💗</p>
+
+      <div class="crying-teddy-scene" aria-label="A teddy bear waiting nervously">
+        <div class="crying-teddy" id="cryingTeddy" aria-hidden="true">
+          <div class="cry-ear cry-ear-left"></div><div class="cry-ear cry-ear-right"></div>
+          <div class="cry-head">
+            <i class="cry-eye cry-eye-left"></i><i class="cry-eye cry-eye-right"></i>
+            <i class="cry-muzzle"></i><i class="cry-nose"></i><i class="cry-mouth"></i>
+            <i class="cry-cheek cry-cheek-left"></i><i class="cry-cheek cry-cheek-right"></i>
+            <i class="tear tear-left"></i><i class="tear tear-right"></i>
+          </div>
+          <div class="cry-body"><span>♥</span></div>
+          <div class="cry-arm cry-arm-left"></div><div class="cry-arm cry-arm-right"></div>
+          <div class="cry-leg cry-leg-left"></div><div class="cry-leg cry-leg-right"></div>
+        </div>
+        <div class="cry-caption" id="cryCaption" aria-live="polite">Your little bear is waiting…</div>
+      </div>
+
+      <div class="answer-area" id="answerArea" aria-label="Choose your answer">
+        <button class="answer-button yes-button" id="yesButton" type="button">Yes 💗</button>
+        <button class="answer-button no-button" id="noButton" type="button">No 🙈</button>
+      </div>
+      <p class="question-foot">Either way, there’s a little something for you <span aria-hidden="true">♡</span></p>
+    </section>
+
+    <div id="mainCardScreen" hidden>
+    <section class="card" aria-labelledby="headline">
+      <div class="card-sparkle sparkle-one" aria-hidden="true">✦</div>
+      <div class="card-sparkle sparkle-two" aria-hidden="true">✧</div>
+      <div class="eyebrow"><span></span> FROM SOMEONE WHO CARES <span></span></div>
+      <h1 id="headline">I’m sorry,<br><em>Anjali.</em></h1>
+      <p class="intro">I may have made your heart feel a little heavy.<br class="desktop-break"> I wish I could rewind and do better.</p>
+
+      <div class="teddy-scene" aria-label="Two teddy bears: one is apologizing and the other is listening">
+        <div class="scene-glow" aria-hidden="true"></div>
+        <div class="heart-float heart-a" aria-hidden="true">♥</div>
+        <div class="heart-float heart-b" aria-hidden="true">♥</div>
+        <div class="teddy teddy-boy" aria-hidden="true">
+          <div class="ear ear-left"></div><div class="ear ear-right"></div>
+          <div class="head"><i class="eye eye-left"></i><i class="eye eye-right"></i><i class="muzzle"></i><i class="nose"></i><i class="mouth"></i><i class="cheek cheek-left"></i><i class="cheek cheek-right"></i></div>
+          <div class="body"><i class="belly-heart">♥</i></div>
+          <div class="arm arm-left"></div><div class="arm arm-right"></div>
+          <div class="leg leg-left"></div><div class="leg leg-right"></div>
+          <div class="speech">I’m sorry…</div>
+        </div>
+        <div class="teddy teddy-girl" aria-hidden="true">
+          <div class="ear ear-left"></div><div class="ear ear-right"></div>
+          <div class="head"><i class="bow"></i><i class="eye eye-left"></i><i class="eye eye-right"></i><i class="muzzle"></i><i class="nose"></i><i class="mouth"></i><i class="cheek cheek-left"></i><i class="cheek cheek-right"></i></div>
+          <div class="body"><i class="belly-heart">♥</i></div>
+          <div class="arm arm-left"></div><div class="arm arm-right"></div>
+          <div class="leg leg-left"></div><div class="leg leg-right"></div>
+        </div>
+        <div class="ground" aria-hidden="true"></div>
+      </div>
+
+      <div class="note-wrap">
+        <button class="open-note" id="openNote" type="button" aria-expanded="false" aria-controls="noteContent">
+          <span class="button-heart" aria-hidden="true">♡</span><span id="openLabel">Open my little note</span><span class="button-arrow" aria-hidden="true">↓</span>
+        </button>
+        <div class="note-content" id="noteContent" hidden>
+          <div class="note-divider"><span>♡</span></div>
+          <p class="note-message">You mean so much to me, and I’m truly sorry for hurting you. I’ll listen, learn, and try to make things right—not just with words, but with the way I treat you.</p>
+          <p class="note-signoff">Whenever you’re ready, I’m here. <span>— with care, always</span></p>
+          <div class="response-area" id="responseArea">
+            <p class="response-prompt">What would feel right for you?</p>
+            <div class="response-buttons">
+              <button class="response-button forgive" type="button" data-response="forgive">A hug, please <span aria-hidden="true">🫂</span></button>
+              <button class="response-button time" type="button" data-response="time">I need a little time <span aria-hidden="true">🌷</span></button>
+            </div>
+            <p class="response-message" id="responseMessage" aria-live="polite"></p>
+          </div>
+        </div>
+      </div>
+      <footer class="card-footer">No pressure to reply — just wanted you to know. <span aria-hidden="true">♡</span></footer>
+    </section>
+    <p class="page-foot">Made with a little hope and a lot of care <span aria-hidden="true">✿</span></p>
+    </div>
+  </main>
+  <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+</body>
+</html>
